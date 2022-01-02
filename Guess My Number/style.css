@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  font-size: 0.85rem;
+  line-height: 1.15;
+  /* background-color: #60b347; */
+}
+
+.header {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  border-bottom: solid 5px #eee;
+}
+
+.top-button {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.top-text {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.header h1 {
+  text-align: center;
+  padding-top: 22vh;
+}
+
+.btn {
+  font-family: "Press Start 2P", sans-serif;
+  border: transparent;
+  color: #222;
+  background: #eee;
+  padding: 1.15rem 1.5rem;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.guess-block {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 1.5rem 3rem;
+  z-index: 2;
+  color: #222;
+  background: #eee;
+}
+
+.guess-block p {
+  font-size: 2rem;
+}
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+.number {
+  justify-self: center;
+}
+.num-input {
+  display: block;
+  border: solid 5px #eee;
+  background: #222;
+  color: #eee;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 2rem;
+  width: 15rem;
+  height: 5rem;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+input:focus {
+  outline-color: transparent;
+  outline-width: 0;
+  outline-offset: 0;
+  outline-style: none;
+}
+
+.ck-btn {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.msg {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.score-details {
+  margin-top: 7rem;
+}
+.score {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.highscore {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}

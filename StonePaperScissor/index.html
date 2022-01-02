@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stone Paper Scissor</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="game">
+    <nav class="title">
+      <button>
+        <h1 class="game-title">💎 Stone 📜 Paper ✂️ Scissor</h1>
+      </button>
+    </nav>
+    <main>
+      <h1 class="winner">Let's Play</h1>
+      <section class="players">
+        <article class="player-1">
+          <div class="content-display">
+            <h3>Player</h3>
+            <div class="img-display">
+              <img
+                src="./images/waiting.jpeg"
+                class="img-container player-sel"
+              />
+            </div>
+          </div>
+          <div class="player-btns">
+            <button class="btn" id="stone">Stone</button>
+            <button class="btn" id="paper">Paper</button>
+            <button class="btn" id="scissor">Scissor</button>
+          </div>
+        </article>
+        <article class="computer">
+          <div class="content-display">
+            <h3>Computer</h3>
+            <div class="img-display">
+              <img
+                src="./images/waiting.jpeg"
+                class="img-container computer-sel"
+              />
+            </div>
+          </div>
+          <div class="player-btns hidden">
+            <button>Stone</button>
+            <button>Paper</button>
+            <button>Scissor</button>
+          </div>
+        </article>
+      </section>
+      <section class="scoreboard">
+        <form>
+          <h3>Score</h3>
+          <div class="score">
+            <label for="player-score">Player:</label>
+            <p id="player-score">0</p>
+          </div>
+          <div class="score">
+            <label for="computer-score">Computer:</label>
+            <p id="computer-score">0</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

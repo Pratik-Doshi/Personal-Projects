@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right bottom, #65dfc9, #6cdbeb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  position: relative;
+  width: 70vw;
+  height: 75vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.7)
+  );
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.current-player {
+  background: #6cdaeb72;
+}
+.total-score {
+  text-align: center;
+}
+
+.total-score h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.total-score p {
+  margin-top: 2rem;
+  font-size: 4rem;
+}
+
+.current-score {
+  text-align: center;
+}
+
+.score-board {
+  display: block;
+  width: 10rem;
+  height: 6rem;
+  margin: 0 auto;
+  background: #65dfc962;
+  border-radius: 0.5rem;
+}
+
+.score-board h3 {
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  letter-spacing: 2px;
+}
+.score-board p {
+  font-size: 2.5rem;
+}
+.btn {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: transparent;
+  background: rgba(238, 238, 238, 0.6);
+  letter-spacing: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.new-game {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice {
+  display: none;
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-show {
+  display: block;
+}
+.dice img {
+  width: 100%;
+}
+
+.dice-roll {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.activemsg-1 {
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.activemsg-2 {
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.winner-player {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #60b34762;
+  background: #60b347;
+  padding: 1rem;
+  letter-spacing: 2px;
+  border-radius: 2rem;
+}

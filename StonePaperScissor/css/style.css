@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.title button {
+  font-family: fantasy;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.game-title {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: transparent;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #ccc;
+  background: rgba(34, 34, 34, 0.9);
+}
+
+.winner {
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+}
+.players {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.player-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  border-right: 1px solid black;
+}
+
+.computer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  border-left: 1px solid black;
+}
+
+.content-display {
+  margin-bottom: 1rem;
+  width: 80;
+  height: 80%;
+}
+
+.content-display h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.img-display {
+  width: 80%;
+  height: 20rem;
+  margin: 0 auto;
+}
+.img-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.player-btns {
+  border: 1px solid black;
+  padding: 1rem 2rem;
+}
+.btn {
+  padding: 1.2rem 1.75rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: fantasy;
+  letter-spacing: 2px;
+  background: #222;
+  color: #ccc;
+  border-radius: 2rem;
+  border: transparent;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.game {
+  position: relative;
+}
+
+.scoreboard {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #222;
+  padding: 1rem 2rem;
+}
+
+.scoreboard h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.score {
+  margin: 0.75rem 0;
+}
+
+label {
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#player-score {
+  display: inline;
+  margin-top: 1rem;
+}
+
+#computer-score {
+  display: inline;
+  margin-top: 1rem;
+}
